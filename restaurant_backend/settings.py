@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY', default='dev-insecure-secret-key-change-me')
 DEBUG = config('DEBUG', default=True, cast=bool)
-ALLOWED_HOSTS = ["https://oluwatobilobagp.pythonanywhere.com"]
+ALLOWED_HOSTS = ["oluwatobilobagp.pythonanywhere.com"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
