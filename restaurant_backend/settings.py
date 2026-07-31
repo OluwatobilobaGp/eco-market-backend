@@ -8,7 +8,8 @@ from decouple import config, Csv
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY', default='dev-insecure-secret-key-change-me')
-DEBUG = config('DEBUG', default=True, cast=bool)
+DEBUG = True
+
 ALLOWED_HOSTS = ["oluwatobilobagp.pythonanywhere.com"]
 
 INSTALLED_APPS = [
@@ -83,6 +84,7 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = '/media/'
